@@ -1,0 +1,269 @@
+body, p, a, nav, h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}   
+
+header {
+    height: 5em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
+    z-index: 1;
+}
+
+header.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+#content {
+    margin-top: 8em;
+}
+
+header button {
+    margin-right: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+nav h1 {
+    margin: 4%;
+    cursor: pointer;
+}
+
+nav h1 a {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dark-theme nav h1 a {
+    color: #fff;
+}
+
+.theme-transition {
+    transition: color 0.4s;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+  }  
+  
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 10px;
+    width: 115vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.profile {
+    display: flex;
+    width: 110vh;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    width: 400px;
+    margin-left: 10%;
+    margin-top: 80px;
+    padding: 0;
+    flex: 1;
+}
+
+.information h1 {
+    font-weight: 1200;
+}
+
+.information svg {
+    margin-right: 10px;
+}
+
+#profile-img {
+    width: 220px;
+    height: auto;
+
+}
+
+.technology {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.technology img {
+    margin: 0.5em;
+}
+
+.techimg{
+    transition: 0.4s;
+}
+
+.techimg:hover{
+    transform: scale(1.1);
+}
+
+.content {
+    justify-content: center;
+    display: flex;
+}
+
+#content {
+    justify-content: center;
+    display: flex;
+}
+
+#content.dark-theme {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+footer {
+    height: 5em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    header {
+        margin-bottom: 1em;
+    }
+
+    nav {
+        margin-bottom: 1em;
+    }
+
+    .container {
+        display: block;
+        width: 90%;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        box-shadow: none;
+    }
+
+    .profile {
+        display: flex;
+        width: 120vh;
+        height: 40em;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .profession {
+        margin-bottom: 1em;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .information {
+        width: 100%;
+        margin: 0;
+        padding: 0%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #profile-img {
+        margin: 2em;
+    }
+
+    .email {
+        margin-top: 2%;
+    }
+
+    .technology {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #RUBYONRAILSimg{
+        width: 12vh;
+        height: auto;
+    }
+
+    .technology span {
+        display: none;
+    }
+}
+
+/* Estilos para telas pequenas (por exemplo, smartphones) */
+@media (max-width: 66px) {
+    .container {
+        width: 100%;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .information {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
