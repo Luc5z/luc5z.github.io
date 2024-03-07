@@ -100,14 +100,19 @@ nav{
     height: 265px;
     border: solid 1px;
     border-radius: 2px;
-    margin: 10px;
+    margin: 30px 30px 10px 30px;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project_description {
+    justify-content: center;
+    display: table-column;
+    text-align: center;
 }
 
 .degree {
