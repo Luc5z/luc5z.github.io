@@ -89,20 +89,130 @@ nav{
 }
 
 .feed, .certificate, .technology {
-    justify-content: space-around;
     margin-top: 20px;
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
 }
 
-.project, .degree, .tech{
-    width: 400px;
-    height: 400px;
+.project {
+    width: 480px;
+    height: 265px;
     border: solid 1px;
+    border-radius: 2px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.degree {
+    width: 350px;
+    height: 265px;
+    border: solid 1px;
+    border-radius: 2px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.tech {
+    width: 300px;
+    height: 300px;
+    border: solid 1px #787878;
+    border-radius: 2px;
     margin: 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.badge{
+    display: flex;
+}
+
+.degree img {
+    width: 100%;
+}
+
+ #degree1 {
+    background-image: url(images/certificates/curso_sql.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#degree2 {
+    background-image: url(images/certificates/curso_linux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#degree3 {
+    background-image: url(images/certificates/curso_docker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#degree4 {
+    background-image: url(images/certificates/curso_agil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#degree5 {
+    background-image: url(images/certificates/certificado-big-data.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#degree6 {
+    background-image: url(images/certificates/curso_git.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#degree7 {
+    background-image: url(images/certificates/aws-cloud-quest-cloud-practitioner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 265px;
+    border: none;
+}
+
+#degree8 {
+    background-image: url(images/certificates/aws-partner-accreditation-technical.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 265px;
+    border: none;
+}
+
+#degree9 {
+    background-image: url(images/certificates/aws-partner-cloud-economics-accreditation.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 265px;
+    border: none;
+}
+
+#degree10 {
+    background-image: url(images/certificates/aws-partner-sales-accreditation-business.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 265px;
+    border: none;
 }
