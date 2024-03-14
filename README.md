@@ -9,3 +9,4 @@
 * Tecnologias: aba com todas as tecnologias que ja tive experiência durante minha carreira.
 
 [Portfólio online](https://luc5z.github.io).
+
