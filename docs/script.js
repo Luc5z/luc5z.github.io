@@ -1,16 +1,28 @@
+
 const projetos = {
     alvaro_simulator: {
       titulo: 'Alvaro Simulator (2D Game)',
       foto: 'images/projects/alvaro_simulator.png',
       descricao: 'Descrição do Alvaro Simulator.',
-      verOnline: 'https://luc5z.github.io/game' 
+      verOnline: 'https://luc5z.github.io/game',
+      tipo: 'foto',
     },
 
     calculadora: {
         titulo: 'Calculadora Científica',
         foto: 'images/projects/calculadora.png',
         descricao: 'Descrição da calculadora.',
-        verOnline: 'https://luc5z.github.io/calculadora' 
+        verOnline: 'https://luc5z.github.io/calculadora', 
+        tipo: 'foto',
+      },
+
+    medlife: {
+        titulo: 'MedLife',
+        foto: 'images/projects/calculadora.png',
+        video: 'images/projects/medlife.mp4',
+        descricao: 'Descrição da calculadora.',
+        verOnline: '',
+        tipo: 'video',
       },
   };
   const certificados = {
@@ -71,10 +83,31 @@ const projetos = {
     document.getElementById('modalTitle').innerText = projeto.titulo;
     document.getElementById('modalDescription').innerText = projeto.descricao;
 
-    const fotoProjeto = document.getElementById('modalImage');
-    fotoProjeto.src = projeto.foto;
-    const linkVerOnlineModal = document.getElementById('modalVerOnline');
-    linkVerOnlineModal.href = projeto.verOnline;
+    if (projeto.tipo == 'foto') {
+      const video = document.getElementById('video');
+      video.style.display = 'none';
+      const fotoProjeto = document.getElementById('modalImage');
+      fotoProjeto.style.display = 'block';
+      fotoProjeto.src = projeto.foto;
+
+      const linkVerOnlineModal = document.getElementById('modalVerOnline');
+      linkVerOnlineModal.href = projeto.verOnline;
+    }
+
+    else if (projeto.tipo == 'video'){
+      const img = document.getElementById('modalImage');
+      img.style.display = 'none';
+
+      const videoprojeto = document.getElementById('source');
+      const video = document.getElementById('video');
+      video.style.display = 'block';
+      videoprojeto.src = projeto.video;
+
+      const linkVerOnlineModal = document.getElementById('modalVerOnline');
+      linkVerOnlineModal.style.display = 'none';
+
+    }
+
 
     document.getElementById('myModal').style.display = 'block';
   }
@@ -95,5 +128,3 @@ const projetos = {
   function fecharCertificado(){
     document.getElementById('divCertificado').style.display = 'none';
   }
-
-  

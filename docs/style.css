@@ -104,10 +104,14 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5); 
   }
   
-  .modal img {
+.modal img {
     width: 100%;
     border-radius: 10px;
-  }
+}
+
+video {
+    width: 800px;
+}
 
   .modal-content {
     position: absolute;

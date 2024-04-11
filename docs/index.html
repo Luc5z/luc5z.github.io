@@ -51,6 +51,10 @@
         <span class="fechar" onclick="fecharModal()">&times;</span>
         <h2 id="modalTitle"></h2>
         <img id="modalImage" src="" alt="">
+        <video id="video" style="display: none;" controls>
+          <source id="source" src="images/projects/medlife.mp4" type="video/mp4">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
         <p id="modalDescription"></p>
         <a id="modalVerOnline" href="#" target="_blank">Ver Online</a>
       </div>
@@ -85,6 +89,12 @@
         <div class="project" onclick="abrirProjeto('calculadora')" style="background-image: url(images/projects/calculadora.png); background-size: cover; background-repeat: no-repeat; cursor: pointer;"></div>
         <h2>Calculadora</h2>
       </div>
+
+      <div class="project_description">
+        <div class="project" onclick="abrirProjeto('medlife')" style="background-image: url(images/projects/medlife.png); background-size: cover; background-repeat: no-repeat; cursor: pointer;"></div>
+        <h2>MedLife</h2>
+      </div>
+
     </div>
 
     <div id="divCertificado" class="modal">
