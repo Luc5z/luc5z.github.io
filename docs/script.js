@@ -1,3 +1,4 @@
+
 const projetos = {
     alvaro_simulator: {
       titulo: 'Alvaro Simulator (2D Game)',
@@ -127,5 +128,3 @@ const projetos = {
   function fecharCertificado(){
     document.getElementById('divCertificado').style.display = 'none';
   }
-
-  
