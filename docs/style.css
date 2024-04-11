@@ -38,6 +38,10 @@ h3 {
     height: 250px;
 }
 
+#eu2 {
+    display: none;
+}
+
 .sobre-mim, .mensagem, .rede-social{
     margin-top: 3%;
     display: flex;
@@ -52,8 +56,30 @@ h3 {
     font-size: 30px;
 }
 
+.sobre-mim{
+    cursor: pointer;
+}
+
 .mensagem {
     margin-top: 2%;
+}
+
+.content-about-me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.content-about-me p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
 }
 
 .sessao-dois{
@@ -78,10 +104,14 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5); 
   }
   
-  .modal img {
+.modal img {
     width: 100%;
     border-radius: 10px;
-  }
+}
+
+video {
+    width: 800px;
+}
 
   .modal-content {
     position: absolute;
@@ -169,13 +199,14 @@ nav{
     width: 350px;
     height: 265px;
     border: solid 1px;
-    border-radius: 2px;
+    border-radius: 4px;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin: 30px;
+    cursor: pointer;
 }
 
 .degree img {
@@ -201,43 +232,49 @@ nav{
     justify-content: center;
 }
 
- #degree1 {
+ #sql-degree {
     background-image: url(images/certificates/curso_sql.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 
-#degree2 {
+#linux-degree {
     background-image: url(images/certificates/curso_linux.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 
-#degree3 {
+#docker-degree {
     background-image: url(images/certificates/curso_docker.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 
-#degree4 {
+#agil-degree {
     background-image: url(images/certificates/curso_agil.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 
-#degree5 {
+#bigdata-degree {
     background-image: url(images/certificates/certificado-big-data.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 
-#degree6 {
+#git-degree {
     background-image: url(images/certificates/curso_git.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 
-#degree7 {
+#ingles-degree {
+    background-image: url(images/certificates/ingles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cloudquest-badge {
     background-image: url(images/certificates/aws-cloud-quest-cloud-practitioner.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -246,7 +283,7 @@ nav{
     border: none;
 }
 
-#degree8 {
+#accreditationtechnical-badge {
     background-image: url(images/certificates/aws-partner-accreditation-technical.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -255,7 +292,7 @@ nav{
     border: none;
 }
 
-#degree9 {
+#cloudeconomics-badge {
     background-image: url(images/certificates/aws-partner-cloud-economics-accreditation.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -264,11 +301,96 @@ nav{
     border: none;
 }
 
-#degree10 {
+#salesaccreditation-badge {
     background-image: url(images/certificates/aws-partner-sales-accreditation-business.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 300px;
     height: 265px;
     border: none;
+}
+
+/* Estilos básicos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Tamanho da fonte menor para dispositivos móveis */
+    }
+
+
+
+    .sessao-um {
+        display: flex;
+    }
+
+    .sessao-um div{
+        width: 150px;
+        margin: auto;
+    }
+
+    #eu {
+        display: none;
+    }
+
+    #eu2 {
+        display: block;
+        height: 360px;
+        width: 360px;
+        margin: auto;
+    }
+
+    svg{
+        width: 50px;
+    }
+
+    .mensagem{
+        display: none;
+    }
+
+    .rede-social {
+        margin-bottom: 20px; /* Adicionar espaço abaixo das redes sociais */
+    }
+
+    
+
+    .content-about-me, .modal-content{
+        width: 300px;
+
+    }
+
+    .feed{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .project {
+        width: 280px;
+        height: 165px;
+        border: solid 1px;
+        border-radius: 2px;
+        margin: 30px 30px 10px 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .project_description {
+        justify-content: center;
+        display: table-column;
+        text-align: center;
+    }
+
+    .degree {
+        width: 90%; 
+        margin: 20px auto; 
+
+    .tech {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+}
 }
