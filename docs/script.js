@@ -11,7 +11,7 @@ const projetos = {
     calculadora: {
         titulo: 'Calculadora Científica',
         foto: 'images/projects/calculadora.png',
-        descricao: 'Descrição da calculadora.',
+        descricao: 'Calculadora científica do Bob Esponja funcional',
         verOnline: 'https://luc5z.github.io/calculadora', 
         tipo: 'foto',
       },
@@ -20,7 +20,7 @@ const projetos = {
         titulo: 'MedLife',
         foto: 'images/projects/calculadora.png',
         video: 'images/projects/medlife.mp4',
-        descricao: 'Descrição da calculadora.',
+        descricao: 'Sistema desenvolvido em Django para Web que simula um site de clínica laboratorial, criado por mim, Dival Lucas.',
         verOnline: '',
         tipo: 'video',
       },
@@ -91,6 +91,7 @@ const projetos = {
       fotoProjeto.src = projeto.foto;
 
       const linkVerOnlineModal = document.getElementById('modalVerOnline');
+      linkVerOnlineModal.style.display = 'block';
       linkVerOnlineModal.href = projeto.verOnline;
     }
 
@@ -98,9 +99,10 @@ const projetos = {
       const img = document.getElementById('modalImage');
       img.style.display = 'none';
 
-      const videoprojeto = document.getElementById('source');
       const video = document.getElementById('video');
       video.style.display = 'block';
+      
+      const videoprojeto = document.getElementById('source');
       videoprojeto.src = projeto.video;
 
       const linkVerOnlineModal = document.getElementById('modalVerOnline');
