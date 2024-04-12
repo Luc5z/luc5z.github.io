@@ -2,9 +2,10 @@ const projetos = {
     alvaro_simulator: {
       titulo: 'Alvaro Simulator (2D Game)',
       foto: 'images/projects/alvaro_simulator.png',
-      descricao: 'Descrição do Alvaro Simulator.',
+      descricao: '"Alvaro Simulator" é um jogo criado com o intuito de ensinar códigos CSS para programadores iniciantes.',
       verOnline: 'https://luc5z.github.io/game',
       tipo: 'foto',
+      repositorio: 'https://github.com/Luc5z/game',
     },
 
     calculadora: {
@@ -13,6 +14,7 @@ const projetos = {
         descricao: 'Calculadora científica do Bob Esponja funcional',
         verOnline: 'https://luc5z.github.io/calculadora', 
         tipo: 'foto',
+        repositorio: 'https://github.com/Luc5z/calculadora',
       },
 
     medlife: {
@@ -22,6 +24,7 @@ const projetos = {
         descricao: 'Sistema desenvolvido em Django para Web que simula um site de clínica laboratorial, criado por mim, Dival Lucas.',
         verOnline: '',
         tipo: 'video',
+        repositorio: 'https://github.com/Luc5z/MedLife',
       },
   };
   const certificados = {
@@ -81,6 +84,8 @@ const projetos = {
     const projeto = projetos[idProjeto];
     document.getElementById('modalTitle').innerText = projeto.titulo;
     document.getElementById('modalDescription').innerText = projeto.descricao;
+    const linkRepositorio = document.getElementById('modalRepositorio');
+    linkRepositorio.href = projeto.repositorio; 
 
     if (projeto.tipo == 'foto') {
       const video = document.getElementById('video');
@@ -100,7 +105,7 @@ const projetos = {
 
       const video = document.getElementById('video');
       video.style.display = 'block';
-      
+
       const videoprojeto = document.getElementById('source');
       videoprojeto.src = projeto.video;
 
