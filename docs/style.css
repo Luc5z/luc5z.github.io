@@ -149,6 +149,11 @@ video {
     cursor: pointer;
     margin-top: 10px;
     text-decoration: none;
+    margin: 0px 10px 0px 10px;
+  }
+
+  #modalRepositorio{
+    background-color: #2030bd
   }
   
   /* Efeito de hover para o botão "Ver Online" */
