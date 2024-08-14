@@ -1,11 +1,19 @@
 
 const projetos = {
+    denuncieaqui: {
+      titulo: 'Denuncie Aqui!',
+      foto: 'images/projects/denuncieaqui.png',
+      video: 'https://www.youtube.com/embed/djc54DXraRo',
+      descricao: 'Sistema de denúncias de descarte irregular e desmatamento para a COP30 desenvolvido em Django, criado por mim, Dival Lucas.',
+      verOnline: '',
+      repositorio: '',
+    },
+
     alvaro_simulator: {
       titulo: 'Alvaro Simulator (2D Game)',
       foto: 'images/projects/alvaro_simulator.png',
       descricao: '"Alvaro Simulator" é um jogo criado com o intuito de ensinar códigos CSS para programadores iniciantes.',
       verOnline: 'https://luc5z.github.io/game',
-      tipo: 'foto',
       repositorio: 'https://github.com/Luc5z/game',
     },
 
@@ -14,17 +22,15 @@ const projetos = {
         foto: 'images/projects/calculadora.png',
         descricao: 'Calculadora científica do Bob Esponja funcional',
         verOnline: 'https://luc5z.github.io/calculadora', 
-        tipo: 'foto',
         repositorio: 'https://github.com/Luc5z/calculadora',
       },
 
     medlife: {
         titulo: 'MedLife',
-        foto: 'images/projects/calculadora.png',
-        video: 'images/projects/medlife.mp4',
+        foto: 'images/projects/medlife.png',
+        video: 'https://youtube.com/embed/FFpjvcQ3yg0',
         descricao: 'Sistema desenvolvido em Django para Web que simula um site de clínica laboratorial, criado por mim, Dival Lucas.',
         verOnline: '',
-        tipo: 'video',
         repositorio: 'https://github.com/Luc5z/MedLife',
       },
   };
@@ -81,6 +87,27 @@ const projetos = {
     document.querySelector('.' + div).style.display = 'flex';
   }
 
+  function carregarProjetos() {
+    const container = document.getElementById('feed');
+    let htmlContent = '';
+
+    for (const chave in projetos) {
+        if (projetos.hasOwnProperty(chave)) {
+            const projeto = projetos[chave];
+
+            htmlContent += `
+                <div class="project_description">
+                    <div class="project" onclick="abrirProjeto('${chave}')" style="background-image: url(${projeto.foto}); background-size: cover; background-repeat: no-repeat; cursor: pointer;">
+                    </div>
+                    <h2>${projeto.titulo}</h2>
+                </div>
+            `;
+        }
+    }
+
+    container.innerHTML = htmlContent;
+}
+
   function abrirProjeto(idProjeto) {
     const projeto = projetos[idProjeto];
     document.getElementById('modalTitle').innerText = projeto.titulo;
@@ -88,7 +115,16 @@ const projetos = {
     const linkRepositorio = document.getElementById('modalRepositorio');
     linkRepositorio.href = projeto.repositorio; 
 
-    if (projeto.tipo == 'foto') {
+    if (!projeto.repositorio){
+    linkRepositorio.style.display = 'none';
+    }
+
+    if (!projeto.verOnline){
+    const linkVerOnlineModal = document.getElementById('modalVerOnline');
+    linkVerOnlineModal.style.display = 'none';
+    }
+
+    if (projeto.verOnline) {
       const video = document.getElementById('video');
       video.style.display = 'none';
       const fotoProjeto = document.getElementById('modalImage');
@@ -100,19 +136,13 @@ const projetos = {
       linkVerOnlineModal.href = projeto.verOnline;
     }
 
-    else if (projeto.tipo == 'video'){
+    else {
       const img = document.getElementById('modalImage');
       img.style.display = 'none';
 
       const video = document.getElementById('video');
       video.style.display = 'block';
-
-      const videoprojeto = document.getElementById('source');
-      videoprojeto.src = projeto.video;
-
-      const linkVerOnlineModal = document.getElementById('modalVerOnline');
-      linkVerOnlineModal.style.display = 'none';
-
+      video.src = projeto.video;
     }
 
 
@@ -135,3 +165,5 @@ const projetos = {
   function fecharCertificado(){
     document.getElementById('divCertificado').style.display = 'none';
   }
+
+window.onload = carregarProjetos;

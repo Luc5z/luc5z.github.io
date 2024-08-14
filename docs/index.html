@@ -33,7 +33,7 @@
     <div class="content-about-me">
       <span class="fechar" onclick="fecharModalSobreMim()">&times;</span>
       <h2>Sobre Mim</h2>
-      <p>Olá, sou Dival Lucas, um desenvolvedor full stack iniciando a minha carreira. Estudo programação há 2 anos. Sou residente da cidade de Ananindeua-PA e estou cursando o ensino superior em Ciências da Computação na UNAMA, atualmente no 5° semestre.
+      <p>Olá, sou Dival Lucas, um desenvolvedor full stack iniciando a minha carreira. Estudo programação há 3 anos. Sou residente da cidade de Ananindeua-PA e estou cursando o ensino superior em Ciências da Computação na UNAMA, atualmente no 6° semestre.
         Desde a infância, quando fiz aulas de robótica, sou totalmente apaixonado pelo mundo da programação. Tenho o sonho de me tornar um programador sênior, morando fora do Brasil, e estou me dedicando muito para realizar esse objetivo.
         Além disso, tenho vários hobbies, sendo que entre os principais estão andar de skate e jogar games. Estou sempre em busca de novos desafios e oportunidades para crescer como profissional.</p>
     </div>
@@ -51,10 +51,7 @@
         <span class="fechar" onclick="fecharModal()">&times;</span>
         <h2 id="modalTitle"></h2>
         <img id="modalImage" src="" alt="">
-        <video id="video" style="display: none;" controls>
-          <source id="source" src="images/projects/medlife.mp4" type="video/mp4">
-          Seu navegador não suporta o elemento de vídeo.
-        </video>
+        <iframe id="video" src="" frameborder="0"></iframe>
         <p id="modalDescription"></p>
         <div style="display: flex; justify-content: center;">
         <a id="modalVerOnline" href="#" target="_blank">Ver Online</a>
@@ -82,21 +79,7 @@
         </svg>
       </div>
     </div>
-
-    <div class="feed">
-      <div class="project_description">
-        <div id="alvaro_simulator" class="project" onclick="abrirProjeto('alvaro_simulator')" style="background-image: url(images/projects/alvaro_simulator.png); background-size: cover; background-repeat: no-repeat; cursor: pointer;"> </div>
-        <h2>Alvaro Simulator (2D Game)</h2>
-      </div>
-      <div class="project_description">
-        <div class="project" onclick="abrirProjeto('calculadora')" style="background-image: url(images/projects/calculadora.png); background-size: cover; background-repeat: no-repeat; cursor: pointer;"></div>
-        <h2>Calculadora</h2>
-      </div>
-
-      <div class="project_description">
-        <div class="project" onclick="abrirProjeto('medlife')" style="background-image: url(images/projects/medlife.png); background-size: cover; background-repeat: no-repeat; cursor: pointer;"></div>
-        <h2>MedLife</h2>
-      </div>
+    <div id="feed" class="feed">
 
     </div>
 
@@ -278,7 +261,152 @@
     </div>
   </nav>
   
-  <script src="script.js"></script>
+  <script src="script.js">
+    const projetos = {
+    alvaro_simulator: {
+      titulo: 'Alvaro Simulator (2D Game)',
+      foto: 'images/projects/alvaro_simulator.png',
+      descricao: '"Alvaro Simulator" é um jogo criado com o intuito de ensinar códigos CSS para programadores iniciantes.',
+      verOnline: 'https://luc5z.github.io/game',
+      repositorio: 'https://github.com/Luc5z/game',
+    },
+
+    calculadora: {
+        titulo: 'Calculadora Científica',
+        foto: 'images/projects/calculadora.png',
+        descricao: 'Calculadora científica do Bob Esponja funcional',
+        verOnline: 'https://luc5z.github.io/calculadora', 
+        repositorio: 'https://github.com/Luc5z/calculadora',
+      },
+
+    medlife: {
+        titulo: 'MedLife',
+        foto: 'images/projects/calculadora.png',
+        video: 'images/projects/medlife.mp4',
+        descricao: 'Sistema desenvolvido em Django para Web que simula um site de clínica laboratorial, criado por mim, Dival Lucas.',
+        verOnline: '',
+        repositorio: 'https://github.com/Luc5z/MedLife',
+      },
+
+    denuncieaqui: {
+        titulo: 'Denuncie Aqui!',
+        foto: 'images/projects/denuncieaqui.png',
+        video: 'https://www.youtube.com/embed/djc54DXraRo',
+        descricao: 'Sistema de denúncias de descarte irregular e desmatamento para a COP30 desenvolvido em Django, criado por mim, Dival Lucas.',
+        verOnline: '',
+        repositorio: '',
+      },
+  };
+  const certificados = {
+    sql: {
+      foto: 'images/certificates/curso_sql.jpg',
+    },
+    linux: {
+      foto: 'images/certificates/curso_linux.jpg',
+    },
+    docker: {
+      foto: 'images/certificates/curso_docker.jpg',
+    },
+    agil: {
+      foto: 'images/certificates/curso_agil.jpg',
+    },
+    bigData: {
+      foto: 'images/certificates/certificado-big-data.jpg',
+    },
+    git: {
+      foto: 'images/certificates/curso_git.jpg',
+    },
+    ingles: {
+      foto: 'images/certificates/ingles.jpg',
+    },
+    cloudQuest: {
+      foto: 'images/certificates/aws-cloud-quest-cloud-practitioner.png',
+    },
+    accreditationTechnical: {
+      foto: 'images/certificates/aws-partner-accreditation-technical.png',
+    },
+    cloudEconomics: {
+      foto: 'images/certificates/aws-partner-cloud-economics-accreditation.png',
+    },
+    salesAccreditation: {
+      foto: 'images/certificates/aws-partner-sales-accreditation-business.png',
+    },
+};
+
+  function mostrarModalSobreMim() {
+    document.getElementById('myModalSobreMim').style.display = 'block';
+  }
+  
+  function fecharModalSobreMim() {
+    document.getElementById('myModalSobreMim').style.display = 'none';
+  }
+  
+
+  function trocarAba(div) {
+    document.querySelector('.feed').style.display = 'none';
+    document.querySelector('.certificate').style.display = 'none';
+    document.querySelector('.technology').style.display = 'none';
+    
+    document.querySelector('.' + div).style.display = 'flex';
+  }
+
+  function abrirProjeto(idProjeto) {
+    const projeto = projetos[idProjeto];
+    document.getElementById('modalTitle').innerText = projeto.titulo;
+    document.getElementById('modalDescription').innerText = projeto.descricao;
+    const linkRepositorio = document.getElementById('modalRepositorio');
+    linkRepositorio.href = projeto.repositorio; 
+
+    if (projeto.verOnline) {
+      const video = document.getElementById('video');
+      video.style.display = 'none';
+      const fotoProjeto = document.getElementById('modalImage');
+      fotoProjeto.style.display = 'block';
+      fotoProjeto.src = projeto.foto;
+
+      const linkVerOnlineModal = document.getElementById('modalVerOnline');
+      linkVerOnlineModal.style.display = 'block';
+      linkVerOnlineModal.href = projeto.verOnline;
+    }
+
+    else {
+      const img = document.getElementById('modalImage');
+      img.style.display = 'none';
+
+      const video = document.getElementById('video');
+      video.style.display = 'cover';
+      video.src = "https://www.youtube.com/embed/djc54DXraRo";
+
+
+      const linkVerOnlineModal = document.getElementById('modalVerOnline');
+      linkVerOnlineModal.style.display = 'none';
+
+    }
+
+
+    document.getElementById('myModal').style.display = 'block';
+  }
+
+  function fecharModal() {
+    document.getElementById('myModal').style.display = 'none';
+  }
+
+  function abrirCertificado(idCertificado){
+    const certificado = certificados[idCertificado];
+    const fotoCertificado = document.getElementById('fotoCertificado');
+    fotoCertificado.src = certificado.foto
+
+
+    document.getElementById('divCertificado').style.display = 'block';
+  }
+
+  function fecharCertificado(){
+    document.getElementById('divCertificado').style.display = 'none';
+  }
+
+  
+
+  </script>
 </body>
 </html>
 
