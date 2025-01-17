@@ -136,6 +136,12 @@ const projetos = {
       linkVerOnlineModal.href = projeto.verOnline;
     }
 
+    if (projeto.repositorio) {
+      const linkRepositorio = document.getElementById('modalRepositorio');
+      linkRepositorio.style.display = 'block';
+      linkRepositorio.href = projeto.repositorio;
+    }
+
     else {
       const img = document.getElementById('modalImage');
       img.style.display = 'none';
