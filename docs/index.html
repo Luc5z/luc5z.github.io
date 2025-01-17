@@ -1,99 +1,418 @@
 <!DOCTYPE html>
-<html lang="pt-BR" id="topo">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hi, i'm Dival!</title>
 
-    <title>Hi, I'm Dival!</title>
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  
 </head>
 <body>
 
-  <header>
+  <h3>Luc5z</h3>
+  <img id="eu2" src="images/Frame.png" alt="">
+  <div class="sessao-um">
 
-  <nav class="subir">
-    <h1><a href="#topo">Início</a></h1>
-    <h1 class="hidden">Sobre</h1>
-    <h1>Projetos</h1>
-  </nav>  
-  
-  <button id="theme-toggle">
-    <svg width="25" height="25" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="light-icon">
-      <path
-        d="M15.2 2.85C18.4754 2.85 21.6167 4.15116 23.9328 6.46723C26.2488 8.78331 27.55 11.9246 27.55 15.2C27.55 18.4754 26.2488 21.6167 23.9328 23.9328C21.6167 26.2488 18.4754 27.55 15.2 27.55V2.85ZM15.2 0C11.1687 0 7.30253 1.60142 4.45198 4.45198C1.60142 7.30253 0 11.1687 0 15.2C0 19.2313 1.60142 23.0975 4.45198 25.948C7.30253 28.7986 11.1687 30.4 15.2 30.4C19.2313 30.4 23.0975 28.7986 25.948 25.948C28.7986 23.0975 30.4 19.2313 30.4 15.2C30.4 11.1687 28.7986 7.30253 25.948 4.45198C23.0975 1.60142 19.2313 0 15.2 0Z"
-        fill="#000" />
-    </svg>
 
-    <svg width="25" height="25" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="dark-icon hidden">
-      <path
-        d="M15.2 2.85C18.4754 2.85 21.6167 4.15116 23.9328 6.46723C26.2488 8.78331 27.55 11.9246 27.55 15.2C27.55 18.4754 26.2488 21.6167 23.9328 23.9328C21.6167 26.2488 18.4754 27.55 15.2 27.55V2.85ZM15.2 0C11.1687 0 7.30253 1.60142 4.45198 4.45198C1.60142 7.30253 0 11.1687 0 15.2C0 19.2313 1.60142 23.0975 4.45198 25.948C7.30253 28.7986 11.1687 30.4 15.2 30.4C19.2313 30.4 23.0975 28.7986 25.948 25.948C28.7986 23.0975 30.4 19.2313 30.4 15.2C30.4 11.1687 28.7986 7.30253 25.948 4.45198C23.0975 1.60142 19.2313 0 15.2 0Z"
-        fill="#fff" />
-      </svg>
-      </button>
+    <div class="rede-social">
+      <a href="https://github.com/Luc5z" target="_blank"> <img src="images/icons/github.png" alt=""> </a>
+      <a href="https://www.instagram.com/lusca404/" target="_blank"> <img src="images/icons/instagram.png" alt=""> </a>
+      <a href="https://www.linkedin.com/in/dival-pontes-20a825271/" target="_blank"> <img src="images/icons/linkedin.png" alt=""> </a>
+    </div>
 
-    </header>
+    <img id="eu" src="images/Frame.png" alt="">
     
-    <div id="content" class="content">
-  <div class="container">
-    <div class="profile">
+    <div class="sobre-mim" onclick="mostrarModalSobreMim()"> <p>Sobre mim</p> </div>
+    
+  </div>
 
-      <div class="information">
-        <div class="profession">
-        <h1>DESENVOLVEDOR </h1>
-        <h1>FULL-STACK</h1></div>
-        <p>Olá, me chamo Dival Lucas! </p>
-        <p>Desenvolvedor web, Ananindeua Pará. 📍</p>
+  <div id="myModalSobreMim" class="modal">
+    <div class="content-about-me">
+      <span class="fechar" onclick="fecharModalSobreMim()">&times;</span>
+      <h2>Sobre Mim</h2>
+      <p>Olá, sou Dival Lucas, um desenvolvedor full stack iniciando a minha carreira. Estudo programação há 3 anos. Sou residente da cidade de Ananindeua-PA e estou cursando o ensino superior em Ciências da Computação na UNAMA, atualmente no 6° semestre.
+        Desde a infância, quando fiz aulas de robótica, sou totalmente apaixonado pelo mundo da programação. Tenho o sonho de me tornar um programador sênior, morando fora do Brasil, e estou me dedicando muito para realizar esse objetivo.
+        Além disso, tenho vários hobbies, sendo que entre os principais estão andar de skate e jogar games. Estou sempre em busca de novos desafios e oportunidades para crescer como profissional.</p>
+    </div>
+  </div>
+  
 
-        <br /><br />
+  <div class="sessao-dois">
+  <div class="mensagem"><a href="mailto:divalmota@gmail.com">Mensagem</a></div>
+  </div>
 
-        <a href="https://www.instagram.com/lusca404/" target="_blank"><svg width="25" height="25" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M10.5856 0C4.77491 0 0 4.76836 0 10.5856V25.4144C0 31.2251 4.76836 36 10.5856 36H25.4144C31.2251 36 36 31.2316 36 25.4144V10.5873C36 4.77491 31.2316 0 25.4144 0H10.5856ZM10.5856 3.27273H25.4144C26.3751 3.27143 27.3266 3.45971 28.2144 3.82676C29.1022 4.19381 29.9089 4.73242 30.5883 5.41175C31.2676 6.09107 31.8062 6.89775 32.1732 7.78558C32.5403 8.6734 32.7286 9.62493 32.7273 10.5856V25.4144C32.7286 26.3751 32.5403 27.3266 32.1732 28.2144C31.8062 29.1022 31.2676 29.9089 30.5883 30.5883C29.9089 31.2676 29.1022 31.8062 28.2144 32.1732C27.3266 32.5403 26.3751 32.7286 25.4144 32.7273H10.5873C9.62643 32.7288 8.67473 32.5407 7.78671 32.1737C6.8987 31.8068 6.09182 31.2682 5.41232 30.5888C4.73283 29.9095 4.19407 29.1027 3.82691 28.2148C3.45976 27.3269 3.27143 26.3752 3.27273 25.4144V10.5873C3.27122 9.62643 3.45933 8.67473 3.82629 7.78671C4.19324 6.8987 4.73182 6.09182 5.41117 5.41232C6.09051 4.73283 6.89727 4.19407 7.7852 3.82691C8.67313 3.45976 9.62479 3.27143 10.5856 3.27273ZM27.6644 6.85309C27.4694 6.85222 27.2763 6.88998 27.096 6.96418C26.9157 7.03838 26.752 7.14755 26.6141 7.28539C26.4763 7.42323 26.3671 7.58701 26.2929 7.76727C26.2187 7.94753 26.181 8.1407 26.1818 8.33564C26.1818 9.16036 26.8396 9.81818 27.6644 9.81818C27.8594 9.81927 28.0528 9.78167 28.2332 9.70757C28.4137 9.63347 28.5777 9.52433 28.7157 9.38647C28.8537 9.24861 28.963 9.08476 29.0373 8.90439C29.1116 8.72402 29.1494 8.53071 29.1485 8.33564C29.1494 8.14056 29.1116 7.94726 29.0373 7.76689C28.963 7.58652 28.8537 7.42266 28.7157 7.2848C28.5777 7.14694 28.4137 7.03781 28.2332 6.9637C28.0528 6.8896 27.8594 6.85201 27.6644 6.85309ZM18 8.18182C12.6 8.18182 8.18182 12.6 8.18182 18C8.18182 23.4 12.6 27.8182 18 27.8182C23.4 27.8182 27.8182 23.4 27.8182 18C27.8182 12.6 23.4 8.18182 18 8.18182ZM18 11.4545C21.6376 11.4545 24.5455 14.3624 24.5455 18C24.5455 21.6376 21.6376 24.5455 18 24.5455C14.3624 24.5455 11.4545 21.6376 11.4545 18C11.4545 14.3624 14.3624 11.4545 18 11.4545Z"
-            fill="#000" />
-        </svg></a>
-        <a href="https://github.com/Luc5z" target="_blank"><svg width="25" height="25" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M19 0C8.5025 0 0 8.5025 0 19C0 27.4075 5.43875 34.5088 12.9912 37.0262C13.9412 37.1925 14.2975 36.6225 14.2975 36.1237C14.2975 35.6725 14.2738 34.1763 14.2738 32.585C9.5 33.4637 8.265 31.4212 7.885 30.3525C7.67125 29.8062 6.745 28.12 5.9375 27.6687C5.2725 27.3125 4.3225 26.4338 5.91375 26.41C7.41 26.3862 8.47875 27.7875 8.835 28.3575C10.545 31.2312 13.2763 30.4238 14.3688 29.925C14.535 28.69 15.0337 27.8587 15.58 27.3837C11.3525 26.9087 6.935 25.27 6.935 18.0025C6.935 15.9362 7.67125 14.2262 8.8825 12.8962C8.6925 12.4212 8.0275 10.4738 9.0725 7.86125C9.0725 7.86125 10.6637 7.3625 14.2975 9.80875C15.8175 9.38125 17.4325 9.1675 19.0475 9.1675C20.6625 9.1675 22.2775 9.38125 23.7975 9.80875C27.4313 7.33875 29.0225 7.86125 29.0225 7.86125C30.0675 10.4738 29.4025 12.4212 29.2125 12.8962C30.4237 14.2262 31.16 15.9125 31.16 18.0025C31.16 25.2937 26.7188 26.9087 22.4913 27.3837C23.18 27.9775 23.7738 29.1175 23.7738 30.8988C23.7738 33.44 23.75 35.4825 23.75 36.1237C23.75 36.6225 24.1063 37.2163 25.0562 37.0262C28.8283 35.7532 32.1061 33.3292 34.4281 30.0954C36.7501 26.8617 37.9993 22.9811 38 19C38 8.5025 29.4975 0 19 0Z"
-            fill="#000" />
-        </svg></a>
-        <p class="email"><a href="mailto:Divalmota@gmail.com">Divalmota@gmail.com</a></p>
+  <nav>
 
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="">
+        <iframe id="video" src="" frameborder="0"></iframe>
+        <p id="modalDescription"></p>
+        <div style="display: flex; justify-content: center;">
+        <a id="modalVerOnline" href="#" target="_blank">Ver Online</a>
+        <a id="modalRepositorio" href="#" target="_blank">Repositório</a>
+        </div>
+      </div>
+    </div>
 
-        <br /><br /><br />
+    <div class="navbar">
+      <div id="botao1" onclick="trocarAba('feed')" style="cursor: pointer;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="90" viewBox="0 0 109 109" fill="none">
+          <path d="M0 0V109H109V0H0ZM34.0625 102.188H6.8125V74.9375H34.0625V102.188ZM34.0625 68.125H6.8125V40.875H34.0625V68.125ZM34.0625 34.0625H6.8125V6.8125H34.0625V34.0625ZM68.125 102.188H40.875V74.9375H68.125V102.188ZM68.125 68.125H40.875V40.875H68.125V68.125ZM68.125 34.0625H40.875V6.8125H68.125V34.0625ZM102.188 102.188H74.9375V74.9375H102.188V102.188ZM102.188 68.125H74.9375V40.875H102.188V68.125ZM102.188 34.0625H74.9375V6.8125H102.188V34.0625Z" fill="#000000"/>
+        </svg>
+      </div>
+      <div id="botao2" onclick="trocarAba('certificate')" style="cursor: pointer;">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="110" viewBox="0 0 122 122" fill="none">
+          <path d="M52.5381 3.38734C54.5882 1.33984 57.3313 0.135055 60.2262 0.0106842C63.121 -0.113686 65.9573 0.85139 68.1756 2.71551L68.9169 3.39314L79.9211 14.3915H95.4775C98.3988 14.392 101.212 15.4964 103.354 17.4833C105.495 19.4702 106.807 22.193 107.026 25.1061L107.061 25.9748V41.5313L118.065 52.5354C120.114 54.5859 121.32 57.3302 121.444 60.2264C121.569 63.1226 120.603 65.9601 118.737 68.1787L118.059 68.9143L107.055 79.9184V95.4748C107.056 98.3972 105.952 101.212 103.965 103.355C101.978 105.497 99.2545 106.81 96.3404 107.029L95.4775 107.058H79.9269L68.9227 118.062C66.8722 120.111 64.1279 121.317 61.2318 121.442C58.3356 121.566 55.498 120.6 53.2794 118.734L52.5439 118.062L41.5397 107.058H25.9775C23.0551 107.059 20.2405 105.955 18.0976 103.968C15.9548 101.981 14.6423 99.2577 14.4231 96.3436L14.3942 95.4748V79.9184L3.38999 68.9143C1.34086 66.8638 0.135059 64.1195 0.0106763 61.2233C-0.113706 58.3271 0.852376 55.4896 2.71816 53.271L3.38999 52.5354L14.3942 41.5313V25.9748C14.3947 23.0535 15.499 20.2402 17.486 18.0987C19.4729 15.9571 22.1956 14.6454 25.1087 14.4263L25.9775 14.3915H41.5339L52.5381 3.38734ZM60.7275 11.5883L49.7233 22.5925C47.7995 24.5133 45.2614 25.6963 42.5532 25.9343L41.5339 25.9748H25.9775V41.5313C25.9782 44.2527 25.0206 46.8875 23.2728 48.9735L22.5836 49.7265L11.5794 60.7306L22.5836 71.729C24.5065 73.652 25.6916 76.1902 25.9312 78.8991L25.9775 79.9184V95.4748H41.5339C44.2554 95.4741 46.8902 96.4317 48.9762 98.1795L49.7291 98.8688L60.7275 109.873L71.7316 98.8688C73.6546 96.9458 76.1928 95.7608 78.9017 95.5212L79.9211 95.4748H95.4775V79.9184C95.4768 77.197 96.4343 74.5621 98.1822 72.4761L98.8714 71.7232L109.876 60.7248L98.8714 49.7207C96.9485 47.7977 95.7634 45.2595 95.5238 42.5506L95.4775 41.5313V25.9748H79.9211C77.1996 25.9755 74.5648 25.018 72.4788 23.2701L71.7259 22.5809L60.7217 11.5768L60.7275 11.5883ZM78.5658 43.2572C79.6081 42.2185 81.0066 41.6154 82.4774 41.5705C83.9482 41.5256 85.3809 42.0422 86.4846 43.0154C87.5883 43.9886 88.2802 45.3454 88.4197 46.8102C88.5593 48.2751 88.136 49.7381 87.2359 50.9022L86.7494 51.4466L58.4861 79.7099C57.3826 80.8148 55.9118 81.476 54.353 81.5678C52.7941 81.6596 51.2558 81.1757 50.0303 80.208L49.4743 79.7157L35.5511 65.7925C34.5013 64.7527 33.8887 63.351 33.8386 61.8742C33.7885 60.3975 34.3047 58.9574 35.2816 57.8488C36.2585 56.7402 37.6221 56.0469 39.0934 55.9108C40.5647 55.7747 42.0324 56.2061 43.1961 57.1166L43.7405 57.5973L53.9802 67.837L78.5658 43.2572Z" fill="#000000"/>
+        </svg>
+
+      </div>
+      <div id="botao3" onclick="trocarAba('technology')" style="cursor: pointer;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="90" viewBox="0 0 109 109" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9788 7.9788C0 15.9685 0 28.8087 0 54.5C0 80.1913 0 93.0369 7.9788 101.016C15.9685 109 28.8087 109 54.5 109C80.1913 109 93.0369 109 101.016 101.016C109 93.0424 109 80.1913 109 54.5C109 28.8087 109 15.963 101.016 7.9788C93.0424 0 80.1913 0 54.5 0C28.8087 0 15.963 0 7.9788 7.9788ZM24.1108 40.984C24.8048 40.1517 25.8009 39.6291 26.8801 39.5309C27.9593 39.4328 29.0333 39.7673 29.866 40.4608L31.3756 41.7143C34.6729 44.4611 37.4796 46.7991 39.4198 48.9519C41.4854 51.2409 43.0931 53.8623 43.0931 57.225C43.0931 60.5876 41.4854 63.2145 39.4198 65.4981C37.4796 67.6508 34.6729 69.9889 31.3756 72.7357L29.866 73.9892C29.4558 74.3481 28.9779 74.6213 28.4606 74.7927C27.9432 74.9642 27.3968 75.0305 26.8535 74.9877C26.3101 74.9448 25.7808 74.7938 25.2967 74.5434C24.8126 74.293 24.3835 73.9483 24.0345 73.5296C23.6856 73.1108 23.424 72.6266 23.2649 72.1053C23.1059 71.5839 23.0528 71.0361 23.1087 70.4939C23.1645 69.9517 23.3282 69.4262 23.5902 68.9483C23.8521 68.4703 24.207 68.0496 24.634 67.7108L25.9093 66.648C29.5009 63.6505 31.8498 61.6885 33.354 60.0208C34.7819 58.4403 34.9181 57.6937 34.9181 57.225C34.9181 56.7563 34.7819 56.0151 33.354 54.4291C31.8443 52.7615 29.5009 50.794 25.9093 47.8019L24.634 46.7392C23.8017 46.0452 23.2791 45.0491 23.1809 43.9699C23.0828 42.8907 23.4173 41.8167 24.1108 40.984ZM85.8375 70.85C85.8375 71.9341 85.4069 72.9737 84.6403 73.7403C83.8737 74.5069 82.8341 74.9375 81.75 74.9375H54.5C53.4159 74.9375 52.3763 74.5069 51.6097 73.7403C50.8431 72.9737 50.4125 71.9341 50.4125 70.85C50.4125 69.7659 50.8431 68.7263 51.6097 67.9597C52.3763 67.1931 53.4159 66.7625 54.5 66.7625H81.75C82.8341 66.7625 83.8737 67.1931 84.6403 67.9597C85.4069 68.7263 85.8375 69.7659 85.8375 70.85Z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+    <div id="feed" class="feed">
+
+    </div>
+
+    <div id="divCertificado" class="modal">
+      <div class="modal-content">
+        <span class="fechar" onclick="fecharCertificado()">&times;</span>
+        <img id="fotoCertificado" src="" alt="">
+      </div>
+    </div>
+
+    <div class="certificate" style="display: none;">
+
+      <div id="sql-degree" class="degree" onclick="abrirCertificado('sql')">
+      
+      </div>
+      <div id="linux-degree" class="degree" onclick="abrirCertificado('linux')">
+
+      </div>
+      <div id="docker-degree" class="degree" onclick="abrirCertificado('docker')">
+        
+      </div>
+      <div id="agil-degree" class="degree" onclick="abrirCertificado('agil')">
+        
+      </div>
+      <div id="bigdata-degree" class="degree" onclick="abrirCertificado('bigData')">
+        
+      </div>
+      <div id="git-degree" class="degree" onclick="abrirCertificado('git')">
+        
+      </div>
+
+      <div id="ingles-degree" class="degree" onclick="abrirCertificado('ingles')">
+        
+      </div>
+
+        <div class="badge">
+          <div id="cloudquest-badge" class="degree">
+            
+          </div>
+          <div id="accreditationtechnical-badge" class="degree">
+            
+          </div>
+          <div id="cloudeconomics-badge" class="degree">
+            
+          </div>
+          <div id="salesaccreditation-badge" class="degree">
+          </div>
+        </div>
+
+    </div>
+
+    <div class="technology" style="display: none;">
+
+      <div class="tech">
+
+        <div class="info">
+          <img src="images/icons/python.png" alt="" style=" height: 150px;">
+          <h1>Python</h1>
+        </div>
 
       </div>
 
-      <img id="profile-img" src="images/profile.png" alt="Lucas Pontes">
+        <div class="tech">
+  
+          <div class="info">
+            <img src="images/icons/django.png" alt="" style=" height: 150px;">
+            <h1>Django</h1>
+          </div>
+  
+        </div>
+
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/docker.png" alt="" style=" height: 150px;">
+          <h1>Docker</h1>
+        </div>
+        
+      </div>
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/aws.png" alt="" style=" height: 100px;">
+          <h1>AWS</h1>
+        </div>
+        
+      </div>
+
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/postgre.png" alt="" style=" height: 100px;">
+          <h1>PostgreSQL</h1>
+        </div>
+        
+      </div>
+
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/git.png" alt="" style=" height: 100px;">
+          <h1>Git</h1>
+        </div>
+        
+      </div>
+
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/linux.png" alt="" style=" height: 100px;">
+          <h1>Linux</h1>
+        </div>
+        
+      </div>
+
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/rubyonrails.png" alt="" style="height: 80px;">
+          <h1>Ruby on Rails</h1>
+        </div>
+        
+      </div>
+      
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/ruby.png" alt="" style="height: 100px;">
+          <h1>Ruby</h1>
+        </div>
+        
+      </div>
+
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/javascript.png" alt="" style=" height: 150px;">
+          <h1>Javascript</h1>
+        </div>
+    
+      </div>
+
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/css.png" alt="" style=" height: 100px;">
+          <h1>CSS</h1>
+        </div>
+        
+      </div>
+      
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/html.png" alt="" style=" height: 100px;">
+          <h1>HTML</h1>
+        </div>
+        
+      </div>
+
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/bootstrap.png" alt="" style=" height: 100px;">
+          <h1>Bootstrap</h1>
+        </div>
+        
+      </div>
+
+      <div class="tech">
+        
+        <div class="info">
+          <img src="images/icons/figma.png" alt="" style=" height: 100px;">
+          <h1>Figma</h1>
+        </div>
+        
+      </div>
       
     </div>
-        <div class="technology">
-          <H2>Tecnologias <span> |</span></H2>
-          <div>
-            <img  id="HTMLimg" class="techimg" src="images/icons/HTML.png" alt="HTML">
-            <img  id="CSSimg" class="techimg" src="images/icons/CSS.png" alt="CSS">
-            <img  id="JSimg" class="techimg" src="images/icons/JS.png" alt="JS">
-            <img  id="BOOTSTRAPimg" class="techimg" src="images/icons/Bootstrap.png" alt="BOOTSTRAP">
-            <img  id="RUBYimg" class="techimg" src="images/icons/Ruby.png" alt="RUBY">
-            <!-- <img id="RUBYONRAILSimg" src="/images/icons/RUBYONRAILS.png" alt="RUBY ON RAILS"> -->
-          </div>
-      </div>
-  </div>
-</div>
+  </nav>
+  
+  <script src="script.js">
+    const projetos = {
+    alvaro_simulator: {
+      titulo: 'Alvaro Simulator (2D Game)',
+      foto: 'images/projects/alvaro_simulator.png',
+      descricao: '"Alvaro Simulator" é um jogo criado com o intuito de ensinar códigos CSS para programadores iniciantes.',
+      verOnline: 'https://luc5z.github.io/game',
+      repositorio: 'https://github.com/Luc5z/game',
+    },
 
-  <!-- projetos -->
-  <div id="content">
-    <div class="projects">
+    calculadora: {
+        titulo: 'Calculadora Científica',
+        foto: 'images/projects/calculadora.png',
+        descricao: 'Calculadora científica do Bob Esponja funcional',
+        verOnline: 'https://luc5z.github.io/calculadora', 
+        repositorio: 'https://github.com/Luc5z/calculadora',
+      },
 
-    </div>
-  </div>
+    medlife: {
+        titulo: 'MedLife',
+        foto: 'images/projects/calculadora.png',
+        video: 'images/projects/medlife.mp4',
+        descricao: 'Sistema desenvolvido em Django para Web que simula um site de clínica laboratorial, criado por mim, Dival Lucas.',
+        verOnline: '',
+        repositorio: 'https://github.com/Luc5z/MedLife',
+      },
 
+<<<<<<< HEAD
   <footer>
     <p>Luc5z &copy;</p>
   </footer>
+=======
+    denuncieaqui: {
+        titulo: 'Denuncie Aqui!',
+        foto: 'images/projects/denuncieaqui.png',
+        video: 'https://www.youtube.com/embed/djc54DXraRo',
+        descricao: 'Sistema de denúncias de descarte irregular e desmatamento para a COP30 desenvolvido em Django, criado por mim, Dival Lucas.',
+        verOnline: '',
+        repositorio: '',
+      },
+  };
+  const certificados = {
+    sql: {
+      foto: 'images/certificates/curso_sql.jpg',
+    },
+    linux: {
+      foto: 'images/certificates/curso_linux.jpg',
+    },
+    docker: {
+      foto: 'images/certificates/curso_docker.jpg',
+    },
+    agil: {
+      foto: 'images/certificates/curso_agil.jpg',
+    },
+    bigData: {
+      foto: 'images/certificates/certificado-big-data.jpg',
+    },
+    git: {
+      foto: 'images/certificates/curso_git.jpg',
+    },
+    ingles: {
+      foto: 'images/certificates/ingles.jpg',
+    },
+    cloudQuest: {
+      foto: 'images/certificates/aws-cloud-quest-cloud-practitioner.png',
+    },
+    accreditationTechnical: {
+      foto: 'images/certificates/aws-partner-accreditation-technical.png',
+    },
+    cloudEconomics: {
+      foto: 'images/certificates/aws-partner-cloud-economics-accreditation.png',
+    },
+    salesAccreditation: {
+      foto: 'images/certificates/aws-partner-sales-accreditation-business.png',
+    },
+};
+>>>>>>> 8ab2b61dd8ec884f75ddcef4efbcd4104a5286b9
 
-<script src="script.js"></script>
+  function mostrarModalSobreMim() {
+    document.getElementById('myModalSobreMim').style.display = 'block';
+  }
+  
+  function fecharModalSobreMim() {
+    document.getElementById('myModalSobreMim').style.display = 'none';
+  }
+  
 
+  function trocarAba(div) {
+    document.querySelector('.feed').style.display = 'none';
+    document.querySelector('.certificate').style.display = 'none';
+    document.querySelector('.technology').style.display = 'none';
+    
+    document.querySelector('.' + div).style.display = 'flex';
+  }
+
+  function abrirProjeto(idProjeto) {
+    const projeto = projetos[idProjeto];
+    document.getElementById('modalTitle').innerText = projeto.titulo;
+    document.getElementById('modalDescription').innerText = projeto.descricao;
+    const linkRepositorio = document.getElementById('modalRepositorio');
+    linkRepositorio.href = projeto.repositorio; 
+
+    if (projeto.verOnline) {
+      const video = document.getElementById('video');
+      video.style.display = 'none';
+      const fotoProjeto = document.getElementById('modalImage');
+      fotoProjeto.style.display = 'block';
+      fotoProjeto.src = projeto.foto;
+
+      const linkVerOnlineModal = document.getElementById('modalVerOnline');
+      linkVerOnlineModal.style.display = 'block';
+      linkVerOnlineModal.href = projeto.verOnline;
+    }
+
+    else {
+      const img = document.getElementById('modalImage');
+      img.style.display = 'none';
+
+      const video = document.getElementById('video');
+      video.style.display = 'cover';
+      video.src = "https://www.youtube.com/embed/djc54DXraRo";
+
+
+      const linkVerOnlineModal = document.getElementById('modalVerOnline');
+      linkVerOnlineModal.style.display = 'none';
+
+    }
+
+
+    document.getElementById('myModal').style.display = 'block';
+  }
+
+  function fecharModal() {
+    document.getElementById('myModal').style.display = 'none';
+  }
+
+  function abrirCertificado(idCertificado){
+    const certificado = certificados[idCertificado];
+    const fotoCertificado = document.getElementById('fotoCertificado');
+    fotoCertificado.src = certificado.foto
+
+
+    document.getElementById('divCertificado').style.display = 'block';
+  }
+
+  function fecharCertificado(){
+    document.getElementById('divCertificado').style.display = 'none';
+  }
+
+  
+
+  </script>
 </body>
 </html>
+

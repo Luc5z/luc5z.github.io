@@ -1,269 +1,402 @@
-body, p, a, nav, h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+/* font-family: 'Poppins', sans-serif; */
 
 body {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.5s, color 0.5s;
 }
 
-body.dark-theme {
-    background-color: #333;
-    color: #fff;
-}   
+h3 {
+    text-align: center;
+    font-size: 280%;
+}
 
-header {
-    height: 5em;
-    display: flex;
-    align-items: center;
+.sessao-um {
+    margin-top: 20px;
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 2em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.5s, color 0.5s;
-    z-index: 1;
-}
-
-header.dark-theme {
-    background-color: #333;
-    color: #fff;
-}
-
-#content {
-    margin-top: 8em;
-}
-
-header button {
-    margin-right: 2em;
-}
-
-nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 1em;
+    height: 22%;
+    justify-content: center;
+}
+
+.rede-social a{
     text-decoration: none;
 }
 
-nav h1 {
-    margin: 4%;
-    cursor: pointer;
+.rede-social img{
+    width: 35px;
+    height: 35px;
+    margin: 8px;
+    border-radius: 10px;
 }
 
-nav h1 a {
-    color: #000;
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    font-weight: bold;
+#eu {
+    margin: 2% 5% 2% 5%;
+    height: 250px;
 }
 
-.dark-theme nav h1 a {
-    color: #fff;
-}
-
-.theme-transition {
-    transition: color 0.4s;
-}
-
-h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.scroll-smooth {
-    scroll-behavior: smooth;
-  }  
-  
-#theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.hidden {
+#eu2 {
     display: none;
 }
 
-.container {
+.sobre-mim, .mensagem, .rede-social{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;  
+    border-radius: 40px;
+    border: solid 1px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.sobre-mim{
+    cursor: pointer;
+}
+
+.mensagem {
+    margin-top: 2%;
+}
+
+.content-about-me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.content-about-me p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.sessao-dois{
+    display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 2px;
+    width: 100%;
+}
+
+.mensagem a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+.modal img {
+    width: 100%;
     border-radius: 10px;
-    width: 115vh;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
-.profile {
+#video{
+    width: 100%; 
+    height: 500px;
+}
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    max-width: 900px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #a53f3f;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  
+  
+  .modal-content a {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    margin: 0px 10px 0px 10px;
+  }
+
+  #modalRepositorio{
+    background-color: #2030bd
+  }
+  
+  /* Efeito de hover para o botão "Ver Online" */
+  .modal-content a:hover {
+    background-color: #45a049;
+  }
+  
+
+nav{
+    margin-top: 50px;
+}
+
+.navbar{
     display: flex;
-    width: 110vh;
-    height: 50vh;
+    justify-content: space-around;
     align-items: center;
+    height: 125px;
+}
+
+.feed, .certificate, .technology {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
 }
 
-.information {
-    width: 400px;
-    margin-left: 10%;
-    margin-top: 80px;
-    padding: 0;
-    flex: 1;
-}
-
-.information h1 {
-    font-weight: 1200;
-}
-
-.information svg {
-    margin-right: 10px;
-}
-
-#profile-img {
-    width: 220px;
-    height: auto;
-
-}
-
-.technology {
-    display: flex;
+.project {
+    width: 480px;
+    height: 265px;
+    border: solid 1px;
+    border-radius: 2px;
+    margin: 30px 30px 10px 30px;
+    justify-content: center;
     align-items: center;
-    margin-left: 10%;
-}
-
-.technology img {
-    margin: 0.5em;
-}
-
-.techimg{
-    transition: 0.4s;
-}
-
-.techimg:hover{
-    transform: scale(1.1);
-}
-
-.content {
-    justify-content: center;
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#content {
+.project_description {
     justify-content: center;
-    display: flex;
+    display: table-column;
+    text-align: center;
 }
 
-#content.dark-theme {
-    background-color: #333;
-    color: #fff;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-footer {
-    height: 5em;
+.degree {
+    width: 350px;
+    height: 265px;
+    border: solid 1px;
+    border-radius: 4px;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.degree img {
+    width: 100%;
+}
+
+.tech {
+    width: 300px;
+    height: 300px;
+    border: solid 1px #787878;
+    border-radius: 2px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.badge{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-/* Responsividade */
-@media (max-width: 900px) {
-    header {
-        margin-bottom: 1em;
+ #sql-degree {
+    background-image: url(images/certificates/curso_sql.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#linux-degree {
+    background-image: url(images/certificates/curso_linux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#docker-degree {
+    background-image: url(images/certificates/curso_docker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#agil-degree {
+    background-image: url(images/certificates/curso_agil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#bigdata-degree {
+    background-image: url(images/certificates/certificado-big-data.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#git-degree {
+    background-image: url(images/certificates/curso_git.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#ingles-degree {
+    background-image: url(images/certificates/ingles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cloudquest-badge {
+    background-image: url(images/certificates/aws-cloud-quest-cloud-practitioner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 265px;
+    border: none;
+}
+
+#accreditationtechnical-badge {
+    background-image: url(images/certificates/aws-partner-accreditation-technical.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 265px;
+    border: none;
+}
+
+#cloudeconomics-badge {
+    background-image: url(images/certificates/aws-partner-cloud-economics-accreditation.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 265px;
+    border: none;
+}
+
+#salesaccreditation-badge {
+    background-image: url(images/certificates/aws-partner-sales-accreditation-business.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 265px;
+    border: none;
+}
+
+/* Estilos básicos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Tamanho da fonte menor para dispositivos móveis */
     }
 
-    nav {
-        margin-bottom: 1em;
-    }
 
-    .container {
-        display: block;
-        width: 90%;
-        margin: 0;
-        align-items: center;
-        text-align: center;
-        box-shadow: none;
-    }
 
-    .profile {
+    .sessao-um {
         display: flex;
-        width: 120vh;
-        height: 40em;
-        align-items: center;
-        flex-direction: column-reverse;
     }
 
-    .profession {
-        margin-bottom: 1em;
+    .sessao-um div{
+        width: 150px;
+        margin: auto;
     }
 
-    .profile {
-        width: 100%;
-    }
-
-    .information {
-        width: 100%;
-        margin: 0;
-        padding: 0%;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    #profile-img {
-        margin: 2em;
-    }
-
-    .email {
-        margin-top: 2%;
-    }
-
-    .technology {
-        margin: 0;
-        align-items: center;
-        text-align: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #RUBYONRAILSimg{
-        width: 12vh;
-        height: auto;
-    }
-
-    .technology span {
+    #eu {
         display: none;
     }
-}
 
-/* Estilos para telas pequenas (por exemplo, smartphones) */
-@media (max-width: 66px) {
-    .container {
-        width: 100%;
+    #eu2 {
+        display: block;
+        height: 360px;
+        width: 360px;
+        margin: auto;
     }
 
-    .profile {
-        width: 100%;
+    svg{
+        width: 50px;
     }
 
-    .information {
-        width: 100%;
-        margin-left: 0;
+    .mensagem{
+        display: none;
+    }
+
+    .rede-social {
+        margin-bottom: 20px; /* Adicionar espaço abaixo das redes sociais */
+    }
+
+    
+
+    .content-about-me, .modal-content{
+        width: 300px;
+
+    }
+
+    .feed{
         margin-top: 20px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .project {
+        width: 280px;
+        height: 165px;
+        border: solid 1px;
+        border-radius: 2px;
+        margin: 30px 30px 10px 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .project_description {
+        justify-content: center;
+        display: table-column;
+        text-align: center;
     }
 
-    .image {
-        width: 100%;
+    .degree {
+        width: 90%; 
+        margin: 20px auto; 
+
+    .tech {
+        width: 90%; 
+        margin: 20px auto; 
     }
+}
 }
