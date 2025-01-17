@@ -33,6 +33,15 @@ const projetos = {
         verOnline: '',
         repositorio: 'https://github.com/Luc5z/MedLife',
       },
+    
+    ondeficar: {
+        titulo: 'Onde Ficar',
+        foto: 'images/projects/ondeficar.png',
+        video: 'https://www.youtube.com/embed/dMEClOXG4w8?si=MfsnauxHJuEh5dVG',
+        descricao: 'Sistema desenvolvido em Django para Web que simula um site de aluguel de imóveis, criado por mim, Dival Lucas.',
+        verOnline: '',
+        repositorio: 'https://github.com/Luc5z/ondeficar.com',
+      },
   };
   const certificados = {
     sql: {
@@ -157,6 +166,10 @@ const projetos = {
 
   function fecharModal() {
     document.getElementById('myModal').style.display = 'none';
+    const video = document.getElementById('video');
+    video.style.display = 'none';
+    const img = document.getElementById('modalImage');
+    img.style.display = 'none';
   }
 
   function abrirCertificado(idCertificado){
