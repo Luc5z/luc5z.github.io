@@ -18,6 +18,33 @@ const projetos = {
       repositorio: '',
     },
 
+    medlife: {
+      titulo: 'MedLife',
+      foto: 'images/projects/medlife.png',
+      video: 'https://youtube.com/embed/FFpjvcQ3yg0',
+      descricao: 'Sistema desenvolvido em Django para Web que simula um site de clínica laboratorial, criado por mim, Dival Lucas.',
+      verOnline: '',
+      repositorio: 'https://github.com/Luc5z/MedLife',
+    },
+
+    netflixo: {
+      titulo: 'Netflixo',
+      foto: 'images/projects/netflixo.png',
+      video: '',
+      descricao: 'Sistema desenvolvido em Django para Web que simula um site de streaming de filmes, criado por mim, Dival Lucas.',
+      verOnline: 'https://luc5z.github.io/simple-video-streaming/',
+      repositorio: 'https://github.com/Luc5z/simple-video-streaming?tab=readme-ov-file',
+    },
+
+    fusionFighters: {
+      titulo: 'Fusion Fighters',
+      foto: 'images/projects/fusionfighters.png',
+      video: '',
+      descricao: 'One Sheet do jogo vencedor da primeira edição do Game Awards da Faculdade UNAMA, onde fui Game Designer e o líder da equipe de desenvolvimento.',
+      verOnline: 'https://luc5z.github.io/Fusion_Fighters/root/',
+      repositorio: '',
+    },
+
     alvaro_simulator: {
       titulo: 'Alvaro Simulator (2D Game)',
       foto: 'images/projects/alvaro_simulator.png',
@@ -34,15 +61,6 @@ const projetos = {
         repositorio: 'https://github.com/Luc5z/calculadora',
     },
 
-    medlife: {
-        titulo: 'MedLife',
-        foto: 'images/projects/medlife.png',
-        video: 'https://youtube.com/embed/FFpjvcQ3yg0',
-        descricao: 'Sistema desenvolvido em Django para Web que simula um site de clínica laboratorial, criado por mim, Dival Lucas.',
-        verOnline: '',
-        repositorio: 'https://github.com/Luc5z/MedLife',
-    },
-    
   };
   const certificados = {
     sql: {
@@ -107,7 +125,8 @@ const projetos = {
 
             htmlContent += `
                 <div class="project_description">
-                    <div class="project" onclick="abrirProjeto('${chave}')" style="background-image: url(${projeto.foto}); background-size: cover; background-repeat: no-repeat; cursor: pointer;">
+                    <div class="project" onclick="abrirProjeto('${chave}')">
+                      <img src="${projeto.foto}" alt="${projeto.titulo}" style="width: 100%; height: 100%; object-fit: fill; cursor: pointer;">
                     </div>
                     <h2>${projeto.titulo}</h2>
                 </div>

@@ -322,10 +322,9 @@ nav{
     border: none;
 }
 
-/* Estilos básicos para dispositivos móveis */
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 14px; /* Tamanho da fonte menor para dispositivos móveis */
+        font-size: 14px;
     }
 
 
@@ -359,7 +358,7 @@ nav{
     }
 
     .rede-social {
-        margin-bottom: 20px; /* Adicionar espaço abaixo das redes sociais */
+        margin-bottom: 20px; 
     }
 
     
