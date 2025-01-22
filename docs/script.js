@@ -5,7 +5,7 @@ const projetos = {
       foto: 'images/projects/ondeficar.png',
       video: 'https://www.youtube.com/embed/dMEClOXG4w8',
       descricao: 'Sistema desenvolvido em Django para Web que simula um site de aluguel de imóveis, criado por mim, Dival Lucas.',
-      verOnline: '',
+      verOnline: 'https://luc5z.github.io/ondeficar/',
       repositorio: 'https://github.com/Luc5z/ondeficar.com',
     },
 
