@@ -181,6 +181,11 @@ nav{
     justify-content: center;
 }
 
+.certificate{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .project {
     width: 480px;
     height: 265px;
@@ -370,6 +375,11 @@ nav{
         justify-content: center;
     }
     
+    .certificate{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .project {
         width: 280px;
         height: 165px;
