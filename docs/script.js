@@ -1,5 +1,14 @@
 
 const projetos = {
+    ondeficar: {
+      titulo: 'Onde Ficar',
+      foto: 'images/projects/ondeficar.png',
+      video: 'https://www.youtube.com/embed/dMEClOXG4w8',
+      descricao: 'Sistema desenvolvido em Django para Web que simula um site de aluguel de imóveis, criado por mim, Dival Lucas.',
+      verOnline: '',
+      repositorio: 'https://github.com/Luc5z/ondeficar.com',
+    },
+
     denuncieaqui: {
       titulo: 'Denuncie Aqui!',
       foto: 'images/projects/denuncieaqui.png',
@@ -23,7 +32,7 @@ const projetos = {
         descricao: 'Calculadora científica do Bob Esponja funcional',
         verOnline: 'https://luc5z.github.io/calculadora', 
         repositorio: 'https://github.com/Luc5z/calculadora',
-      },
+    },
 
     medlife: {
         titulo: 'MedLife',
@@ -32,16 +41,8 @@ const projetos = {
         descricao: 'Sistema desenvolvido em Django para Web que simula um site de clínica laboratorial, criado por mim, Dival Lucas.',
         verOnline: '',
         repositorio: 'https://github.com/Luc5z/MedLife',
-      },
+    },
     
-    ondeficar: {
-        titulo: 'Onde Ficar',
-        foto: 'images/projects/ondeficar.png',
-        video: 'https://www.youtube.com/embed/dMEClOXG4w8?si=MfsnauxHJuEh5dVG',
-        descricao: 'Sistema desenvolvido em Django para Web que simula um site de aluguel de imóveis, criado por mim, Dival Lucas.',
-        verOnline: '',
-        repositorio: 'https://github.com/Luc5z/ondeficar.com',
-      },
   };
   const certificados = {
     sql: {
@@ -131,6 +132,7 @@ const projetos = {
     if (!projeto.verOnline){
     const linkVerOnlineModal = document.getElementById('modalVerOnline');
     linkVerOnlineModal.style.display = 'none';
+    linkRepositorio.style.display = projeto.repositorio ? 'block' : 'none';
     }
 
     if (projeto.verOnline) {
@@ -143,12 +145,7 @@ const projetos = {
       const linkVerOnlineModal = document.getElementById('modalVerOnline');
       linkVerOnlineModal.style.display = 'block';
       linkVerOnlineModal.href = projeto.verOnline;
-    }
-
-    if (projeto.repositorio) {
-      const linkRepositorio = document.getElementById('modalRepositorio');
-      linkRepositorio.style.display = 'block';
-      linkRepositorio.href = projeto.repositorio;
+      linkRepositorio.style.display = projeto.repositorio ? 'block' : 'none';
     }
 
     else {
@@ -158,6 +155,7 @@ const projetos = {
       const video = document.getElementById('video');
       video.style.display = 'block';
       video.src = projeto.video;
+      linkRepositorio.style.display = projeto.repositorio ? 'block' : 'none';
     }
 
 
