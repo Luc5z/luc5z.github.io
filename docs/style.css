@@ -107,6 +107,7 @@ h3 {
 .modal img {
     width: 100%;
     border-radius: 10px;
+    border: solid 1px #c0c0c0;
 }
 
 #video{
