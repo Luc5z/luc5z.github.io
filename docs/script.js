@@ -32,7 +32,7 @@ const projetos = {
       foto: 'images/projects/netflixo.png',
       video: '',
       descricao: 'Sistema desenvolvido em Django para Web que simula um site de streaming de filmes, criado por mim, Dival Lucas.',
-      verOnline: 'https://luc5z.github.io/simple-video-streaming/',
+      verOnline: 'https://luc5z.github.io/Netflix/',
       repositorio: 'https://github.com/Luc5z/simple-video-streaming?tab=readme-ov-file',
     },
 
