@@ -1,4 +1,3 @@
-
 const projetos = {
     ondeficar: {
       titulo: 'Onde Ficar',
@@ -36,13 +35,13 @@ const projetos = {
       repositorio: 'https://github.com/Luc5z/simple-video-streaming?tab=readme-ov-file',
     },
 
-    fusionFighters: {
-      titulo: 'Fusion Fighters',
-      foto: 'images/projects/fusionfighters.png',
+    Sorteador: {
+      titulo: 'Sorteador Online',
+      foto: 'images/projects/sorteio.png',
       video: '',
-      descricao: 'One Sheet do jogo vencedor da primeira edição do Game Awards da Faculdade UNAMA, onde fui Game Designer e o líder da equipe de desenvolvimento.',
-      verOnline: 'https://luc5z.github.io/Fusion_Fighters/root/',
-      repositorio: '',
+      descricao: 'Sorteador Online de numeros de 1 a 3500 usando Js, Html e Css',
+      verOnline: 'https://luc5z.github.io/Sorteio/',
+      repositorio: 'https://github.com/Luc5z/Sorteio',
     },
 
     alvaro_simulator: {
