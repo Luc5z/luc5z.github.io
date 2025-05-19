@@ -62,7 +62,7 @@ const projetos = {
 
     aulagithub: {
         titulo: 'Aula de Git',
-        foto: 'images/projects/aulagit.png',
+        foto: 'images/projects/aulagithub.jpeg',
         descricao: 'Site feito com intuito de ensiar calouros da faculdade de Ciência da computação e Análise e Desenvolvimento de Sistemas a como usar Git e Github da melhor forma',
         verOnline: 'https://luc5z.github.io/aulaGithub', 
         repositorio: 'https://github.com/Luc5z/aulaGithub',
