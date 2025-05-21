@@ -35,31 +35,6 @@ const projetos = {
       repositorio: 'https://github.com/Luc5z/simple-video-streaming?tab=readme-ov-file',
     },
 
-    Sorteador: {
-      titulo: 'Sorteador Online',
-      foto: 'images/projects/sorteio.png',
-      video: '',
-      descricao: 'Sorteador Online de numeros de 1 a 3500 usando Js, Html e Css',
-      verOnline: 'https://luc5z.github.io/Sorteio/',
-      repositorio: 'https://github.com/Luc5z/Sorteio',
-    },
-
-    alvaro_simulator: {
-      titulo: 'Alvaro Simulator (2D Game)',
-      foto: 'images/projects/alvaro_simulator.png',
-      descricao: '"Alvaro Simulator" é um jogo criado com o intuito de ensinar códigos CSS para programadores iniciantes.',
-      verOnline: 'https://luc5z.github.io/game',
-      repositorio: 'https://github.com/Luc5z/game',
-    },
-
-    calculadora: {
-        titulo: 'Calculadora Científica',
-        foto: 'images/projects/calculadora.png',
-        descricao: 'Calculadora científica do Bob Esponja funcional',
-        verOnline: 'https://luc5z.github.io/calculadora', 
-        repositorio: 'https://github.com/Luc5z/calculadora',
-    },
-
     aulagithub: {
         titulo: 'Aula de Git',
         foto: 'images/projects/aulagithub.jpeg',
@@ -252,11 +227,16 @@ function carregarprojetos() {
             const projeto = projetos[chave];
 
             htmlContent += `
-                <div class="project_description">
-                    <div class="project" onclick="abrirProjeto('${chave}')">
-                      <img src="${projeto.foto}" alt="${projeto.titulo}" style="width: 100%; height: 100%; object-fit: fill; cursor: pointer;">
-                    </div>
-                    <h2>${projeto.titulo}</h2>
+                <div class="project">
+                  <div class="project-mac-header">
+                    <span class="project-mac-dot red"></span>
+                    <span class="project-mac-dot yellow"></span>
+                    <span class="project-mac-dot green"></span>
+                    <span class="project-mac-title">${projeto.titulo}</span>
+                  </div>
+                  <div class="project-content" onclick="abrirProjeto('${chave}')">
+                    <img src="${projeto.foto}" alt="${projeto.titulo}">
+                  </div>
                 </div>
             `;
         }
@@ -371,6 +351,23 @@ function abrirCertificado(idCertificado){
 
 function fecharCertificado(){
   document.getElementById('divCertificado').style.display = 'none';
+}
+
+function abrirModalMensagem() {
+  document.getElementById('myModalMensagem').style.display = 'block';
+}
+
+function fecharModalMensagem() {
+  document.getElementById('myModalMensagem').style.display = 'none';
+}
+
+function copiarEmail() {
+  const email = 'divalmota@gmail.com';
+  navigator.clipboard.writeText(email).then(function() {
+    alert('E-mail copiado!');
+  }, function() {
+    alert('Não foi possível copiar o e-mail.');
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {

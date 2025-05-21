@@ -41,7 +41,16 @@
   
 
   <div class="sessao-dois">
-  <div class="mensagem"><a href="mailto:divalmota@gmail.com">Mensagem</a></div>
+    <div class="mensagem" onclick="abrirModalMensagem()">Mensagem</div>
+  </div>
+
+  <div id="myModalMensagem" class="modal">
+    <div class="content-about-me">
+      <span class="fechar" onclick="fecharModalMensagem()">&times;</span>
+      <h2>Contato</h2>
+      <p style="font-size:1.2rem;">Meu e-mail: <strong>divalmota@gmail.com</strong></p>
+      <button onclick="copiarEmail()" style="padding:8px 16px; background:#2030bd; color:#fff; border:none; border-radius:4px; cursor:pointer;">Copiar e-mail</button>
+    </div>
   </div>
 
   <nav>

@@ -22,15 +22,45 @@ h3 {
     justify-content: center;
 }
 
-.rede-social a{
-    text-decoration: none;
+.rede-social {
+    background: #fff;
+    font-weight: bold;
+    box-shadow: 0 4px 24px 0 rgba(32,48,189,0.18), 0 1.5px 4px 0 rgba(32,48,189,0.10);
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+    outline: none;
+    border-radius: 40px;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    padding: 0 10px;
+    border: none;
 }
 
-.rede-social img{
+.rede-social:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.rede-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.rede-social img {
     width: 35px;
     height: 35px;
-    margin: 8px;
+    margin: 8px 4px;
     border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.rede-social img:hover {
+    transform: scale(1.2);
 }
 
 #eu {
@@ -50,18 +80,52 @@ h3 {
     width: 150px;
     height: 40px;  
     border-radius: 40px;
-    border: solid 1px;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
 }
 
-.sobre-mim{
+.sobre-mim {
     cursor: pointer;
+    background: #fff;
+    color: #2030bd;
+    font-weight: bold;
+    box-shadow: 0 4px 24px 0 rgba(32,48,189,0.18), 0 1.5px 4px 0 rgba(32,48,189,0.10);
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+    outline: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+}
+
+.sobre-mim:hover {
+    background: #2030bd;
+    color: #fff;
+    transform: scale(1.05);
 }
 
 .mensagem {
     margin-top: 2%;
+    background: #fff;
+    color: #2030bd;
+    font-weight: bold;
+    box-shadow: 0 4px 24px 0 rgba(32,48,189,0.18), 0 1.5px 4px 0 rgba(32,48,189,0.10);
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+}
+
+.mensagem:hover {
+    background: #2030bd;
+    color: #fff;
+    transform: scale(1.05);
 }
 
 .content-about-me {
@@ -197,153 +261,90 @@ nav{
 }
 
 .project {
-    width: 480px;
-    height: 265px;
-    border: solid 1px;
-    border-radius: 2px;
+    width: 420px;
+    height: 240px;
     margin: 30px 30px 10px 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
+    background: #f8f8fa;
+    border-radius: 12px 12px 10px 10px;
+    box-shadow: 0 2px 8px rgba(32,48,189,0.10);
+    overflow: hidden;
+    border: 1.5px solid #e0e0e0;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
+    box-shadow: 0 8px 24px rgba(32,48,189,0.18);
 }
 
-.project_description {
-    justify-content: center;
-    display: table-column;
-    text-align: center;
-}
-
-.degree {
-    width: 350px;
-    height: 265px;
-    border: solid 1px;
-    border-radius: 4px;
-    justify-content: center;
+.project-mac-header {
+    height: 32px;
+    background: linear-gradient(90deg, #e0e0e0 60%, #f8f8fa 100%);
+    display: flex;
     align-items: center;
+    justify-content: flex-start;
+    padding: 0 0px;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 0;
+    position: relative;
+}
+.project-mac-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 1;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 1px #bbb;
+}
+.project-mac-dot.red { background: #ff5f56; margin-left: 16px; border: 1px solid #e0443e; }
+.project-mac-dot.yellow { background: #ffbd2e; margin-left: 6px; border: 1px solid #dea123; }
+.project-mac-dot.green { background: #27c93f; margin-left: 6px; border: 1px solid #13a10e; }
+.project-mac-title {
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.project-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
     cursor: pointer;
 }
-
-.degree img {
+.project-content img {
     width: 100%;
+    height: 208px;
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    box-shadow: none;
 }
-
-.tech {
-    width: 300px;
-    height: 300px;
-    border: solid 1px #787878;
-    border-radius: 2px;
-    margin: 50px;
-    justify-content: center;
-    align-items: center;
+.project-content h2 {
+    font-size: 1.2rem;
+    margin: 0 0 6px 0;
+    color: #222;
+    font-weight: 600;
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
-.badge{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 300px;
-    height: 265px;
-    border: none;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    .sessao-um {
-        display: flex;
-    }
-
-    .sessao-um div{
-        width: 150px;
-        margin: auto;
-    }
-
-    #eu {
-        display: none;
-    }
-
-    #eu2 {
-        display: block;
-        height: 260px;
-        width: 260px;
-        margin: auto;
-    }
-
-    svg{
-        width: 50px;
-    }
-
-    .mensagem{
-        display: none;
-    }
-
-    .rede-social {
-        margin-bottom: 20px; 
-    }
-
-    
-
-    .content-about-me, .modal-content{
-        width: 300px;
-
-    }
-
-    .feed{
-        margin-top: 20px;
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .certificate{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .project {
-        width: 280px;
-        height: 165px;
-        border: solid 1px;
-        border-radius: 2px;
-        margin: 30px 30px 10px 30px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    }
-    
-    .project_description {
-        justify-content: center;
-        display: table-column;
-        text-align: center;
-    }
-
-    .degree {
-        width: 90%; 
-        margin: 20px auto; 
-
-    .tech {
-        width: 90%; 
-        margin: 20px auto; 
-    }
-}
-}
+@media only screen and
