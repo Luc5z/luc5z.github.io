@@ -363,11 +363,8 @@ function fecharModalMensagem() {
 
 function copiarEmail() {
   const email = 'divalmota@gmail.com';
-  navigator.clipboard.writeText(email).then(function() {
-    alert('E-mail copiado!');
-  }, function() {
-    alert('Não foi possível copiar o e-mail.');
-  });
+  navigator.clipboard.writeText(email)
+    .catch(err => console.error('Erro ao copiar email:', err));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
