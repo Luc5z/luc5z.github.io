@@ -358,7 +358,6 @@ nav{
 
 .degree {
     width: 100%;
-    height: 200px;
     margin: 0;
     background: #f8f8fa;
     border-radius: 12px;
@@ -437,7 +436,26 @@ nav{
     text-align: center;
 }
 
+#eu3 {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
+
+    #profile {
+        display: block;
+        height: 260px;
+        width: 260px;
+        margin: auto;
+    }
+    #eu {
+        display: none;
+    }
+
+    #eu3 {
+        display: block;
+    }
+
     .certificados {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 15px;
@@ -451,17 +469,17 @@ nav{
     }
 
     .degree {
-        height: 150px;
+        height: auto;
     }
 
     .tech {
-        padding: 15px;
-        width: 150px;
-        height: 150px;
+        padding: 40px;
+        width: 120px;
+        height: 120px;
     }
 
     .tech .info img {
-        height: 60px;
+        height: 50px;
     }
 
     .tech .info h1 {
