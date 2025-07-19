@@ -2,7 +2,7 @@
 
 Este é um modelo de portfólio digital projetado por **Dival Lucas** e desenvolvido utilizando apenas **HTML, CSS e JavaScript**.
 
-🔗 **Acesse o Portfólio Online:** [Clique aqui](https://luc5z.github.io)
+🔗 **Acesse o Portfólio Online:** [Clique aqui](https://lusca404.github.io)
 
 ## 🌟 Sobre o Projeto
 
